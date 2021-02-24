@@ -11,8 +11,22 @@ public class Main {
         int jogadaA = meuRandom.nextInt(3);
         int jogadaB = meuRandom.nextInt(3);
 
-        System.out.println(jogadaA);
-        System.out.println(jogadaB);
+        switch (jogadaA){
+            case 0:
+                System.out.println("A - Pedra");break;
+            case 1:
+                System.out.println("A - Papel");break;
+            case 2:
+                System.out.println("A - Tesoura");break;
+        }
+        switch (jogadaB){
+            case 0:
+                System.out.println("B - Pedra");break;
+            case 1:
+                System.out.println("B - Papel");break;
+            case 2:
+                System.out.println("B - Tesoura");break;
+        }
 
         if (jogadaA==jogadaB){
             System.out.println("Empate!");
