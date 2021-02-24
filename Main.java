@@ -14,6 +14,14 @@ public class Main {
         System.out.println(jogadaA);
         System.out.println(jogadaB);
 
+        if (jogadaA==jogadaB){
+            System.out.println("Empate!");
+        }else if ((jogadaA==1 && jogadaB==0) || (jogadaA==0 && jogadaB==2)){
+            System.out.println("Jogador A ganhou!");
+        }else {
+            System.out.println("Jogador B ganhou!");
+        }
+
     }
 
 }
